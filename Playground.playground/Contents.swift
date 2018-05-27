@@ -1,6 +1,8 @@
 import UIKit
 
-func valueList(for enumCase: EnumCase, suffix: String) -> String {
+// For an enum with (intValue: Int) as an associated type,
+// and a suffix of "LHS", returns "(let intValueLHS)"
+func associatedValueList(enumCase: EnumCase, suffix: String) -> String {
     let list = enumCase.associatedValues
         .map({ value in
             guard let name = value.localName else {
@@ -10,12 +12,4 @@ func valueList(for enumCase: EnumCase, suffix: String) -> String {
         })
         .joined(separator: ", ")
     return enumCase.associatedValues.isEmpty ? "" : "(\(list))"
-}
-
-func caseDeclaration(for enumCase: EnumCase) -> String {
-    let caseName = enumCase.name
-    let lhsList = valueList(for: enumCase, suffix: "LHS")
-    let rhsList = valueList(for: enumCase, suffix: "RHS")
-    let optionalLet = enumCase.associatedValues.isEmpty ? "" : "let"
-    return "case \(optionalLet) (.\(caseName)\(lhsList), .\(caseName)\(rhsList)):"
 }
