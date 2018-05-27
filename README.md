@@ -39,7 +39,7 @@ The `update_sourcery.sh` script clones the Sourcery repository and copies the fi
 
 ### The Manual Part
 
-Xcode Playgrounds can get a [no such module error](https://stackoverflow.com/questions/33144877/playground-import-no-such-module-foo#comment54592475_33144877) if any files in its Sources imports a custom module. As so, after running `update_sourcery.sh` , it may be necessary to manually edit the `SourceryRuntime` source files to get the Playground running. It's also possible that the contents of `SourceryRuntime` change in such a way where it's unviable to make the necessary manual edits, and this playground becomes unsupported.
+Xcode Playgrounds can get a [no such module error](https://stackoverflow.com/questions/33144877/playground-import-no-such-module-foo#comment54592475_33144877) if any files in its Sources imports a custom module. As so, after running `update_sourcery.sh` , it may be necessary to manually edit the `SourceryRuntime` source files to get the Playground running. It's also possible that the contents of `SourceryRuntime` change in such a way where it's unviable to make the necessary manual edits, and this playground becomes unsupported. We’re here for a good time, not a long time.
 
 ### Current Version
 
