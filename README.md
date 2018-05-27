@@ -20,7 +20,7 @@ func associatedValueList(enumCase: EnumCase, suffix: String) -> String {
             guard let name = value.localName else {
                 fatalError("AutoEquatable enums should have associated types with labels")
             }
-            return "\(name)\(suffix)"
+            return "let \(name)\(suffix)"
         })
         .joined(separator: ", ")
     return enumCase.associatedValues.isEmpty ? "" : "(\(list))"
