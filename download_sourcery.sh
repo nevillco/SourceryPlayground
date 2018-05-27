@@ -17,3 +17,6 @@ rm -rf ./Sourcery
 fi
 
 bundle exec git clone https://github.com/krzysztofzablocki/Sourcery $SOURCERY_DIR
+
+echo "Removing Sourcery directory’s git information..."
+rm -rf "$SOURCERY_DIR/.git/"
