@@ -43,4 +43,4 @@ Xcode Playgrounds can get a [no such module error](https://stackoverflow.com/que
 
 ### Current Version
 
-The source files in this playground are from Sourcery **0.13.1** See the [diffs from any manual source file edits here](https://github.com/nevillco/SourceryPlayground/compare/master...without-manual-edits).
+The source files in this playground are from Sourcery **0.13.1** See the [diffs from any manual source file edits here](https://github.com/nevillco/SourceryPlayground/commit/89c43197d0ccb3e00a3dae442a0d4e6cf1f371d3).
