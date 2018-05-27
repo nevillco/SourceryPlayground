@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    git (1.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  git
+
+BUNDLED WITH
+   1.16.1
