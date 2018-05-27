@@ -1,8 +1,12 @@
 #!/bin/bash
 
 if !(gem query -i -n bundler); then
-echo "Installing any dependencies..."
+echo "Installing bundler..."
 gem install bundler
+fi
+
+if [ ! -f "Gemfile.lock" ] ; then
+echo "Installing gems..."
 bundle install
 fi
 
