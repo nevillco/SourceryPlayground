@@ -35,12 +35,12 @@ _You can't yet provide test cases right in the Playground, because there isn't a
 
 ### The Automated Part
 
-The `download_sourcery.sh` script clones the Sourcery repository and copies the files in the `SourceryRuntime` directory into the Playground's sources.
+The `update_sourcery.sh` script clones the Sourcery repository and copies the files in the `SourceryRuntime` directory into the Playground's sources.
 
 ### The Manual Part
 
-Xcode Playgrounds can get a [no such module error](https://stackoverflow.com/questions/33144877/playground-import-no-such-module-foo#comment54592475_33144877) if any files in its Sources imports a custom module. As so, after running `download_sourcery.sh` , it may be necessary to manually edit the `SourceryRuntime` source files to get the Playground running. It's also possible that the contents of `SourceryRuntime` change in such a way where it's unviable to make the necessary manual edits, and this playground becomes unsupported.
+Xcode Playgrounds can get a [no such module error](https://stackoverflow.com/questions/33144877/playground-import-no-such-module-foo#comment54592475_33144877) if any files in its Sources imports a custom module. As so, after running `update_sourcery.sh` , it may be necessary to manually edit the `SourceryRuntime` source files to get the Playground running. It's also possible that the contents of `SourceryRuntime` change in such a way where it's unviable to make the necessary manual edits, and this playground becomes unsupported.
 
 ### Current Version
 
-The source files in this playground are from Sourcery **0.13.1**.
+The source files in this playground are from Sourcery **0.13.1** See the [diffs from any manual source file edits here](https://github.com/nevillco/SourceryPlayground/compare/master...without-manual-edits).
