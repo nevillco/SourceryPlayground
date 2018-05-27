@@ -25,4 +25,4 @@ rm -rf "$RUNTIME_TARGET_DIR/*"
 cp -R "$RUNTIME_SOURCE_DIR" "$RUNTIME_TARGET_DIR"
 
 echo "Removing cloned Sourcery directory..."
-rm -rf ./Sourcery
+rm -rf "$SOURCERY_DIR"
