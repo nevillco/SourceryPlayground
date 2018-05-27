@@ -1,3 +1,3 @@
 import UIKit
 
-let x = UIView()
+print(type(of: SourceryProtocol.self))
