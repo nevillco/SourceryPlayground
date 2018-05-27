@@ -1,0 +1,12 @@
+coverage:
+  ignore:
+    - Sourcery/main.swift
+    - Sourcery/CodeGenerated/*
+    - Pods/*
+  status:
+    patch: false
+    changes: false
+    project:
+      default:
+        target: 70
+comment: false
