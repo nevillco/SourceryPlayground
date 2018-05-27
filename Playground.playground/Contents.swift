@@ -1,2 +1,3 @@
+import UIKit
 
-let x = ABC()
+let x = UIView()

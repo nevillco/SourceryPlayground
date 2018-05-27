@@ -19,11 +19,9 @@ fi
 bundle exec git clone https://github.com/krzysztofzablocki/Sourcery $SOURCERY_DIR
 
 RUNTIME_SOURCE_DIR="$SOURCERY_DIR/SourceryRuntime/Sources/"
-RUNTIME_TARGET_DIR="./SourceryRuntime/"
+RUNTIME_TARGET_DIR="./Playground.playground/Sources/"
 echo "Copying SourceryRuntime directory to root..."
-if [ -d "$RUNTIME_TARGET_DIR" ] ; then
-    rm -rf "$RUNTIME_TARGET_DIR"
-fi
+rm -rf "$RUNTIME_TARGET_DIR/*"
 cp -R "$RUNTIME_SOURCE_DIR" "$RUNTIME_TARGET_DIR"
 
 echo "Removing cloned Sourcery directory..."
